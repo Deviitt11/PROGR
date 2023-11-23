@@ -21,7 +21,7 @@ public class BucleWhile {
         
         // Bucle While
         while(n > 0){
-            System.out.println("El número vale: " + n);
+            System.out.println("El nÃºmero vale: " + n);
             n--;
         }
         
@@ -29,14 +29,14 @@ public class BucleWhile {
         int n2 = 10;
         do {
             n2--;
-            System.out.println("El número vale: " + n2);
+            System.out.println("El nÃºmero vale: " + n2);
         }while(n2>0);
         
         // Si es par o no hasta que se introduzca por teclado un negativo
         
         Scanner s = new Scanner (System.in);
         
-        System.out.println("Introduce un número: ");
+        System.out.println("Introduce un nÃºmero: ");
         int n3 = s.nextInt();
         
         while(n3 > 0) {
@@ -46,7 +46,7 @@ public class BucleWhile {
             else {
                 System.out.println("Impar");
             }
-            System.out.println("Introduce un número: ");
+            System.out.println("Introduce un nÃºmero: ");
             n3 = s.nextInt();
         }
         
@@ -62,7 +62,7 @@ public class BucleWhile {
             else {
                 System.out.println("Impar");
             }
-            System.out.println("Introduce un número: ");
+            System.out.println("Introduce un nÃºmero: ");
             n3 = s.nextInt();
         }while(nTec > 0);
     }

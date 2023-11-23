@@ -19,6 +19,8 @@ public class BucleFor {
         for(int i = 50; i > 0; i--) {
             System.out.println("Hola: " + i);
             
-        }     
+        }
+        
     }
+    
 }
