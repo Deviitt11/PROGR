@@ -29,20 +29,5 @@ public class Ejercicios {
         
        
     }
-    
-    public static String invertirCadena(String cadena) {
-            
-            cadena = cadena.toLowerCase();
-            String cI = "";
-            
-            // Invertimos la cadena
-            char character;
-            for (int i = cadena.length() - 1; i >= 0; i--) {
-                character = cadena.charAt(i);
-                cadIn += character;
-            }
-            
-            return cadIn;
-        }
-    
+   
 }
