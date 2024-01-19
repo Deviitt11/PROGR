@@ -12,12 +12,10 @@ public class Persona {
     
     String nombre;
     int edad;
-    String ciudad;
 
-    public Persona(String nombre, int edad, String ciudad) {
+    public Persona(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
-        this.ciudad = ciudad;
     }
 
     public String getNombre() {
@@ -35,17 +33,15 @@ public class Persona {
     public void setEdad(int edad) {
         this.edad = edad;
     }
-
-    public String getCiudad() {
-        return ciudad;
-    }
-
-    public void setCiudad(String ciudad) {
-        this.ciudad = ciudad;
+    
+    public void showPersona(){
+        System.out.println("Nombre: " + nombre + ", edad: " + edad);
     }
 
     @Override
     public String toString() {
-        return "Persona{" + "nombre=" + nombre + ", edad=" + edad + ", ciudad=" + ciudad + '}';
-    } 
+        return "Nombre: " + nombre + ", edad: " + edad;
+    }
+    
+    
 }
