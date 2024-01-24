@@ -96,12 +96,24 @@ public class Menu {
                     Lista.rellenaLista(listaPal);
                     break;
                 case 5: // OPCIÓN 5: ORDENAR LISTA
+                    if(listaPal.size() == 0) {
+                        System.out.println("Primero se debe rellenar con valores la estructura de almacenamiento\n");
+                        break;
+                    }
                     Lista.ordenaLista(listaPal);
                     break;
                 case 6: // OPCIÓN 6: MOSTRAR PALABRA MÁS LARGA
+                    if(listaPal.size() == 0) {
+                        System.out.println("Primero se debe rellenar con valores la estructura de almacenamiento\n");
+                        break;
+                    }
                     Lista.palabraMasLarga(listaPal);
                     break;
                 case 7: // OPCIÓN 7: MOSTRAR LISTA
+                    if(listaPal.size() == 0) {
+                        System.out.println("Primero se debe rellenar con valores la estructura de almacenamiento\n");
+                        break;
+                    }
                     Lista.muestraLista(listaPal);
                     break;
                 case 8: // OPCIÓN 8: AÑADIR ELEMENTO A MAPA
