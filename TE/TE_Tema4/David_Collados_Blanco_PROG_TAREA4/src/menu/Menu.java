@@ -58,8 +58,7 @@ public class Menu {
         HashMap<Integer, String> mapa = new HashMap<>(); // Creamos el hashMap
         
         int contador = 0; // contador para el hashMap
-        
-
+      
         do { // do while para el menú, se mostrará hasta que se introduzca el número 11 (salir) o un número fuera del rango 1-11 (opción no válida)
 
             // El menú que el usuario ve en la consola
@@ -84,10 +83,9 @@ public class Menu {
                     m2 = Matrix.generaMatrix2(rows, columns);
                     break;
                 case 2: // OPCIÓN 2: COMPROBAR MATRICES SON IGUALES
-
+                    Matrix.matricesIguales(m1, m2, rows, columns);
                     break;
                 case 3: // OPCIÓN 3: MOSTRAR MATRICES
-                          
                     Matrix.muestraMatrix(m1, rows, columns);
                     Matrix.muestraMatrix(m2, rows, columns);
                     break;
@@ -96,24 +94,12 @@ public class Menu {
                     Lista.rellenaLista(listaPal);
                     break;
                 case 5: // OPCIÓN 5: ORDENAR LISTA
-                    if(listaPal.size() == 0) {
-                        System.out.println("Primero se debe rellenar con valores la estructura de almacenamiento\n");
-                        break;
-                    }
                     Lista.ordenaLista(listaPal);
                     break;
                 case 6: // OPCIÓN 6: MOSTRAR PALABRA MÁS LARGA
-                    if(listaPal.size() == 0) {
-                        System.out.println("Primero se debe rellenar con valores la estructura de almacenamiento\n");
-                        break;
-                    }
                     Lista.palabraMasLarga(listaPal);
                     break;
                 case 7: // OPCIÓN 7: MOSTRAR LISTA
-                    if(listaPal.size() == 0) {
-                        System.out.println("Primero se debe rellenar con valores la estructura de almacenamiento\n");
-                        break;
-                    }
                     Lista.muestraLista(listaPal);
                     break;
                 case 8: // OPCIÓN 8: AÑADIR ELEMENTO A MAPA
@@ -121,17 +107,9 @@ public class Menu {
                     Mapa.incluyeElemento(mapa, contador);
                     break;
                 case 9: // OPCIÓN 9: VACIAR MAPA
-                    if(mapa.isEmpty()){
-                        System.out.println("Primero se debe rellenar con valores la estructura de almacenamiento\n");
-                        break;
-                    }
                     Mapa.vaciaMapa(mapa);
                     break;
                 case 10: // OPCIÓN 10: MOSTRAR MAPA
-                    if(mapa.isEmpty()){
-                        System.out.println("Primero se debe rellenar con valores la estructura de almacenamiento\n");
-                        break;
-                    }
                     Mapa.muestraMapa(mapa);
                     break;
                 case 11:
@@ -140,7 +118,5 @@ public class Menu {
                     System.out.println("Opcion no valida\n"); // opción por defecto que indica que la opción no ha sido valida en caso de introducir un número no valido.
             }
         } while (opcion != 11);
-
     }
-
 }

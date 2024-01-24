@@ -30,16 +30,27 @@ public class Mapa {
     // OPCIÓN 9: VACIAR MAPA
     // Esta opción vaciará el mapa eliminando todos los elementos que contenga.
     public static void vaciaMapa(HashMap<Integer, String> mapa){ // Recibe el hashMap como parámetro
-        mapa.clear(); // Limpiamos el mapa con el método clear
-        System.out.println("El mapa ha sido vacíado correctamente"); // Mensaje para el usuario
+        
+        if(mapa.isEmpty()){ // Si nuestro mapa está vacío, mensaje para el usuario
+            System.out.println("Primero se debe rellenar con valores la estructura de almacenamiento\n");      
+        }
+        else {
+            mapa.clear(); // Limpiamos el mapa con el método clear
+            System.out.println("El mapa ha sido vacíado correctamente"); // Mensaje para el usuario   
+        }
     }
     
     // OPCIÓN 10: MOSTRAR MAPA
     // Esta opción debe recorrer e imprimir la clave y valor de todos los elementos del mapa.
     public static void muestraMapa(HashMap<Integer, String> mapa){ // Recibe como parámetro el hashMap
-        for (Integer key : mapa.keySet()) { // Bucle for each para recorrer por clave las palabras del mapa
+        
+        if(mapa.isEmpty()){ // Si nuestro mapa está vacío, mensaje para el usuario
+            System.out.println("Primero se debe rellenar con valores la estructura de almacenamiento\n");      
+        }
+        else{
+            for (Integer key : mapa.keySet()) { // Bucle for each para recorrer por clave las palabras del mapa
                         System.out.println("Clave: " + key + ", Valor: " + mapa); // Imprimimos cada clave junto a su palabra
-                    }
+            }
+        }
     }
-    
 }

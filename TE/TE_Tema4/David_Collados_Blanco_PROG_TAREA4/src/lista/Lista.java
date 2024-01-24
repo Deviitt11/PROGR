@@ -37,31 +37,47 @@ public class Lista {
     // OPCIÓN 5: ORDENAR LISTA
     // Está opción debe ordenar la lista por orden alfabético.
     public static void ordenaLista(ArrayList<String> listaPal){ // Recibe como parámetro una lista
-        Collections.sort(listaPal); // El método sort ordena la lista por orden alfabético
+        
+        if(listaPal.isEmpty()) { // Si nuestra lista está vacía, mensaje para el usuario
+            System.out.println("Primero se debe rellenar con valores la estructura de almacenamiento\n");
+        }
+        else {
+            Collections.sort(listaPal); // El método sort ordena la lista por orden alfabético   
+        }
     }
      
     // OPCIÓN 6: MOSTRAR PALABRA MÁS LARGA
     // Está opción debe buscar y mostrar por pantalla la palabra que tenga más caracteres (en caso de empate proceder de la manera que se quiera).
     public static void palabraMasLarga(ArrayList<String> listaPal) { // Recibe como parámetro una lista
         
-        String larga = null; // Creamos una variable para almacenar la palabra más larga
-        
-        for(String palabra: listaPal){ // Bucle for each para recorrer la lista
-            larga = listaPal.getFirst(); // Se toma la primera palabra como la larga
-            if(palabra.length() >= larga.length()){ // Si una palabra es mayor que la larga, se comparan sus longitudes y se machaca la variable, actualizándola con la más larga
-                larga = palabra;
-            }
+        if(listaPal.isEmpty()) { // Si nuestra lista está vacía, mensaje para el usuario
+            System.out.println("Primero se debe rellenar con valores la estructura de almacenamiento\n");
         }
-        System.out.println("La palabra mas larga es: " + larga + "\n"); // Imprimimos la palabra más larga
+        else {
+            String larga = null; // Creamos una variable para almacenar la palabra más larga
+            
+            for(String palabra: listaPal){ // Bucle for each para recorrer la lista
+                larga = listaPal.getFirst(); // Se toma la primera palabra como la larga
+                if(palabra.length() >= larga.length()){ // Si una palabra es mayor que la larga, se comparan sus longitudes y se machaca la variable, actualizándola con la más larga
+                    larga = palabra;
+                }
+            }
+            System.out.println("La palabra mas larga es: " + larga + "\n"); // Imprimimos la palabra más larga   
+        }
     }
     
     // OPCIÓN 7: MOSTRAR LISTA
     // Esta opción debe mostrar los valores de la lista.
     public static void muestraLista(ArrayList<String> listaPal){ // Recibe como parámetro una lista
-        for(String palabra: listaPal){ // Bucle for each para recorrer la lista
-            System.out.println(palabra + ""); // Imprimimos cada elemento
+        
+        if(listaPal.isEmpty()) { // Si nuestra lista está vacía, mensaje para el usuario
+            System.out.println("Primero se debe rellenar con valores la estructura de almacenamiento\n");
         }
-        System.out.println(""); // Salto de línea
+        else {
+            for(String palabra: listaPal){ // Bucle for each para recorrer la lista
+                System.out.println(palabra + ""); // Imprimimos cada elemento
+            }
+            System.out.println(""); // Salto de línea
+        }
     }
-    
 }
