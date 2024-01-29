@@ -104,7 +104,7 @@ public class Menu {
                     break;
                 case 8: // OPCIÓN 8: AÑADIR ELEMENTO A MAPA
                     s.nextLine(); // Limpiamos el buffer al pasar de leer un número a una cadena
-                    Mapa.incluyeElemento(mapa, contador);
+                    Mapa.incluyeElemento(mapa);
                     break;
                 case 9: // OPCIÓN 9: VACIAR MAPA
                     Mapa.vaciaMapa(mapa);

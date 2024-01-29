@@ -61,16 +61,9 @@ public class ColectionList {
             
             if(num != 0) {
                 listaDou.add(num);
-            }
-            
+            }   
         }
-        
-        double media = calcMedia(listaDou);
-        
-        
-        
-        
-        
+        double media = calcMedia(listaDou);     
     }
     
     public static double calcMedia(ArrayList<Double> listaNuMB){

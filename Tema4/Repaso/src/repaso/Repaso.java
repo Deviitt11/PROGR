@@ -19,6 +19,8 @@ public class Repaso {
     public static void main(String[] args) {
         
         HashMap<Integer, String> mapa = new HashMap<Integer, String>();
+        addElement(mapa);
+        showMapa(mapa);
         
         
     }
@@ -32,6 +34,7 @@ public class Repaso {
         
         contador++;
         Scanner s = new Scanner(System.in);
+        System.out.println("Introduce una palabra: ");
         String palabra = s.nextLine();
         
         mapa.put(contador, palabra);
