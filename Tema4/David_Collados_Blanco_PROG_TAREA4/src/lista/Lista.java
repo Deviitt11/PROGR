@@ -54,10 +54,9 @@ public class Lista {
             System.out.println("Primero se debe rellenar con valores la estructura de almacenamiento\n");
         }
         else {
-            String larga = null; // Creamos una variable para almacenar la palabra más larga
+            String larga = listaPal.get(0);; // Creamos una variable para almacenar la palabra más larga
             
             for(String palabra: listaPal){ // Bucle for each para recorrer la lista
-                larga = listaPal.getFirst(); // Se toma la primera palabra como la larga
                 if(palabra.length() >= larga.length()){ // Si una palabra es mayor que la larga, se comparan sus longitudes y se machaca la variable, actualizándola con la más larga
                     larga = palabra;
                 }

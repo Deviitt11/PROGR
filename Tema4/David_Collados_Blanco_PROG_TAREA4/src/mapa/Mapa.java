@@ -12,14 +12,14 @@ import java.util.Scanner;
  * @author david
  */
 public class Mapa {
-    
+            static int contador = 0;
+
     // OPCIÓN 8: AÑADIR ELEMENTO A MAPA
     // Esta opción pedirá al usuario que introduzca una palabra. 
     // La palabra introducida debe añadirse al HashMap. 
     // Nota: el HashMap tendrá como clave un número entero y cada elemento añadido tendrá el número que indicará el orden en el que se ha añadido (contador comenzando desde 1).
     public static HashMap<Integer, String> incluyeElemento(HashMap<Integer, String> mapa){ // Recibe como parámetros el hashMap y un contador para la clave
        
-        int contador = 0;
         
         contador++; // aumentamos el contador, sirve como ID para cada palabra, ya que cada una tiene un valor único (según el orden en que se introduce)
         Scanner s = new Scanner(System.in); // Creamos el objeto Scanner para leer la palabra

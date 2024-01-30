@@ -56,9 +56,7 @@ public class Menu {
         ArrayList<String> listaPal = new ArrayList<>(); // Creamos la lista
         
         HashMap<Integer, String> mapa = new HashMap<>(); // Creamos el hashMap
-        
-        int contador = 0; // contador para el hashMap
-      
+          
         do { // do while para el menú, se mostrará hasta que se introduzca el número 11 (salir) o un número fuera del rango 1-11 (opción no válida)
 
             // El menú que el usuario ve en la consola
