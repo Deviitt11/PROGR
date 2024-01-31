@@ -10,8 +10,6 @@ package ejerc;
  */
 public class ejerc {
 
-    // Introducir números enteros en un array, finalizando cuando el usuario escriba un 0
-    // (el 0 no se almacenará en el array). Calcula la media de dichos números
     public static String invertirCadena(String cadena) {
 
         cadena = cadena.toLowerCase();

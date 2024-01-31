@@ -30,7 +30,7 @@ public class Maps {
         alumnos.get(3);
         
         // Reemplazo un valor
-        alumnos.put(2, "Sara");
+        alumnos.put(2, "Paco");
         
         // Eliminar un valor
         alumnos.remove(1);
