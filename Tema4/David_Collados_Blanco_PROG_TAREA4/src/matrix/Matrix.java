@@ -31,20 +31,6 @@ public class Matrix {
         return m1; 
     }
     
-    public static int[][] generaMatrix2(int rows, int columns) { // Mismo método para la segunda matriz
-        
-        int[][] m2 = new int[rows][columns];
-        
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < columns; j++) {
-                Random r = new Random();
-                int randNumb = r.nextInt(minimo, maximo) + 1;
-                m2[i][j] = randNumb;
-            }
-        }
-        return m2;
-    }
-    
     // OPCIÓN 2: COMPROBAR MATRICES SON IGUALES
     // Esta opción comprobará si las dos matrices generadas son iguales y mostrará por pantalla un mensaje indicando si son o no iguales.
     public static void matricesIguales(int[][] m1, int[][] m2, int rows, int columns) {

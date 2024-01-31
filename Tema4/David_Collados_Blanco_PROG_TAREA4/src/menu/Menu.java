@@ -78,7 +78,7 @@ public class Menu {
             switch (opcion) { // Menú Switch, cada opción realiza su correspondiente acción
                 case 1: // OPCIÓN 1: GENERAR MATRICES ALEATORIAS
                     m1 = Matrix.generaMatrix1(rows, columns);
-                    m2 = Matrix.generaMatrix2(rows, columns);
+                    m2 = Matrix.generaMatrix1(rows, columns);
                     break;
                 case 2: // OPCIÓN 2: COMPROBAR MATRICES SON IGUALES
                     Matrix.matricesIguales(m1, m2, rows, columns);
