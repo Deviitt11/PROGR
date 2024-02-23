@@ -14,10 +14,12 @@ import java.lang.reflect.AccessFlag;
 public class Circulo extends FiguraGeo{
     
     double radio;
+    private final String amarillo;
 
     public Circulo(int radio, String amarillo){
-        super(color);
+        
         this.radio = radio;
+        this.amarillo = amarillo;
     }
 
     public double getRadio() {

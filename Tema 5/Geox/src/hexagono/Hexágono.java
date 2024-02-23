@@ -44,7 +44,7 @@ public class Hexágono extends FiguraGeo{
     Circulo circulo = new Circulo(2, "amarillo");
     Hexágono hex = new Hexágono(3.0, 5.0, "morado");
     
-    syso
+    //System.out.println ("Area cuadrado: " + cuadrado.cal);
             
     
     
