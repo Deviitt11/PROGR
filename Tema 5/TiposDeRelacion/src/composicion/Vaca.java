@@ -13,6 +13,41 @@ import animales.AnimalGranja;
 public class Vaca extends AnimalGranja{
     
     int litrosLeche;
+    Cencerro cencerro = new Cencerro("11111");
+
+    public int getLitrosLeche() {
+        return litrosLeche;
+    }
+
+    public void setLitrosLeche(int litrosLeche) {
+        this.litrosLeche = litrosLeche;
+    }
+
+    public Cencerro getCencerro() {
+        return cencerro;
+    }
+
+    public void setCencerro(Cencerro cencerro) {
+        this.cencerro = cencerro;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+    
+    
 
     public Vaca(int litrosLeche, String nombre, double peso) {
         super(nombre, peso);
@@ -24,6 +59,8 @@ public class Vaca extends AnimalGranja{
         this.litrosLeche = litrosLeche;
         this.cencerro = cencerro;
     }
+    
+    
     
     
     

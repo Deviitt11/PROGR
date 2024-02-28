@@ -7,6 +7,7 @@ import animales.PastorAleman;
 import animales.Perro;
 import composicion.Cencerro;
 import composicion.Vaca;
+import granjero.Granjero;
 
 
 public class Granja {
@@ -41,8 +42,11 @@ public class Granja {
         Vaca vaca1 = new Vaca(1, cencerro, "Paco",33.5);
         Vaca vaca2 = new Vaca(1, "Paco",33.5);
         
+        Granjero rafael = new Granjero("68374295", "1111111N");
+        Granjero paco = new Granjero("21424234", "4444444S");
         
-        
+        rafael.ordenarVaca(vaca1, 70);
+        paco.ordenarVaca(vaca1, 50);
         
         
         
