@@ -22,6 +22,8 @@ public class Vehiculo {
         this.anoFabricacion = anoFabricacion;
     }
 
+    // Métodos get y set
+    
     public String getMatricula() {
         return matricula;
     }
@@ -48,8 +50,7 @@ public class Vehiculo {
     
     // Método público mostrarDatos que muestre por pantalla el valor de todos sus atributos
     public void mostrarDatos(){
-        
-        System.out.println("Matricula: " + this.getMatricula() + ", su velocidad maxima es: " + this.getVelocidadMax() + "y su año de fabricación es: " + this.getAnoFabricacion());
+        System.out.println("Matricula: " + this.getMatricula() + ", su velocidad maxima es: " + this.getVelocidadMax() + " y su año de fabricacion es: " + this.getAnoFabricacion());
     }
     
     
