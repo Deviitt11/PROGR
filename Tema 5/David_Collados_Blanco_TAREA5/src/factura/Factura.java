@@ -17,7 +17,7 @@ public class Factura {
     
     // Atributos
     private static double precio;
-    private static Date fecha;
+    private static Date fecha = new Date();
     private Cliente cliente;
     
     // Constructor con todos los atributos

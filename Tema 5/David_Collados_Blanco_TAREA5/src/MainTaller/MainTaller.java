@@ -7,6 +7,7 @@ package MainTaller;
 import factura.Factura;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Date;
 import persona.Cliente;
 import persona.Mecanico;
 import vehiculo.Coche;
@@ -23,6 +24,8 @@ public class MainTaller {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        Date fecha = new Date();
         
         // Llamar al método ‘obtenerDiaActual’ y mostrar por pantalla lo que devuelva
         System.out.println(Factura.obtenerDiaActual());
