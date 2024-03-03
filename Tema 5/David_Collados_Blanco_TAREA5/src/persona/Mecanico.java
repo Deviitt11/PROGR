@@ -26,13 +26,18 @@ public class Mecanico extends Persona {
     public boolean arreglarVehiculo(String matricula, ArrayList<Vehiculo> vehiculos) {
         
         boolean resultado = false; // creamos una variable booleana para el resultado
-        
+             
+        Vehiculo objetivo = null; // variable para almacenar el vehiculo objetivo
+               
         for(Vehiculo v: vehiculos) { // recorremos el array
             if(v.getMatricula().equals(matricula)) { // Si el vehículo seleccionado tiene la matrícula recibida por parámetro
-                vehiculos.remove(v); // elimina el vehículo del array
+                objetivo = v; // actualizamos el objetivo
                 resultado = true; // y devuelve true
             }
-        }
+        }  
+        if(resultado == true) { // si devuelve verdadero
+            vehiculos.remove(objetivo); // eliminamos el vehiculo del array
+        }    
         return resultado; 
     }
    
@@ -45,11 +50,16 @@ public class Mecanico extends Persona {
         
         boolean resultado = false; // creamos una variable booleana para el resultado
         
+        Vehiculo objetivo = null; // variable para almacenar el vehiculo objetivo
+        
         for(Vehiculo v: vehiculos) { // recorremos el array
             if(v.equals(vehiculo)) { // si el vehiculo del array es igual al vehículo pasado por parámetro
-                vehiculos.remove(v); // se elimina el vehiculo del array
+                objetivo = v; // actualizamos el objetivo
                 resultado = true; // y devuelve true
             }
+        }
+        if(resultado == true) { // si devuelve verdadero
+            vehiculos.remove(objetivo); // eliminamos el vehiculo del array
         }
         return resultado; // en caso contrario, devuelve falso
     }

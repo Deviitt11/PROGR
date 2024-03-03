@@ -25,7 +25,7 @@ public class MainTaller {
      */
     public static void main(String[] args) {
         
-        Date fecha = new Date();
+        Date fecha = new Date(); // creamos un objeto fecha
         
         // Llamar al método ‘obtenerDiaActual’ y mostrar por pantalla lo que devuelva
         System.out.println(Factura.obtenerDiaActual());
@@ -36,12 +36,16 @@ public class MainTaller {
         */
         ArrayList<Vehiculo> vehiculos = new ArrayList<>(); // creamos el arrayList de tipo Vehiculo
         
-        Moto moto = new Moto(250, "1234PDP", 150, 2023); // creamos un objeto de tipo Moto
+        Moto moto1 = new Moto(250, "1234PDP", 150, 2023); // creamos un objeto de tipo Moto
+        Moto moto2 = new Moto(333, "4562DJE", 275, 2012);
         
-        Coche coche = new Coche(4, "Diesel", "1107 DVT", 300, 2023); // creamos un objeto de tipo Coche
+        Coche coche1 = new Coche(4, "Diesel", "1107 DVT", 300, 2023); // creamos un objeto de tipo Coche
+        Coche coche2 = new Coche(2, "Diesel", "1134 GUT", 288, 2015);
         
-        vehiculos.add(moto); // añadimos el objeto moto al array
-        vehiculos.add(coche); // añadimos el objeto coche al array
+        vehiculos.add(moto1); // añadimos el objeto moto al array
+        vehiculos.add(moto2);
+        vehiculos.add(coche1); // añadimos el objeto coche al array
+        vehiculos.add(coche2);
         
         // Crear un objeto de la clase Mecanico
         Mecanico mecanico = new Mecanico("8888888F", "Manolin");
@@ -59,20 +63,20 @@ public class MainTaller {
         crear un objeto de la clase Factura, llamar al método ‘calcularPrecio’ y añadir la Factura creada al arrayList.
         En caso de que ‘arreglarVehiculo’ devuelva ‘false’ se debe imprimir “Piezas pedidas a Alemania
         */
-        mecanico.arreglarVehiculo("1234PDP", vehiculos); // llamamos al metodo arreglarVehiculo pasándole un String como parámetro
-        
-        boolean resultado = mecanico.arreglarVehiculo("1234PDP", vehiculos); // almacenamos el resultado en una variable
-        
-        if(resultado == true) { // si devuelve verdadero, imprimimos mensaje por pantalla
+        boolean resultado = mecanico.arreglarVehiculo("1234PDP", vehiculos); // llamamos al metodo arreglarVehiculo pasándole un String como parámetro y almacenamos el resultado en una variable
+       
+        if(resultado == true) { // si es verdadero, imprimimos mensaje por pantalla
             System.out.println("Vehiculo arreglado");
+            
+            Factura factura1 = new Factura(33333.3, fecha, cliente); // creamos el objeto de la clase 
+            
+            factura1.calcularPrecio(50.0); // llamada al método
+        
+            facturas.add(factura1); // añadimos la factura al arrayList de facturas
         }
         else{ // si devuelve falso, imprimimos otro mensaje
             System.out.println("Piezas pedidas a Alemania"); 
         }
-        
-        Factura factura = new Factura(33333.3, fecha, cliente); // creamos el objeto de la clase factura
-        
-        facturas.add(factura); // añadimos la factura al arrayList de facturas
         
         /*
         Llamar al método ‘arreglarVehiculo’ de la clase Mecánico pasándole como parámetro un vehículo. 
@@ -80,20 +84,20 @@ public class MainTaller {
         y añadir la Factura creada al arrayList. 
         En caso de que ‘arreglarVehiculo’ devuelva ‘false’ se debe imprimir “Piezas pedidas a Alemania”
         */
-        mecanico.arreglarVehiculo2(coche, vehiculos); // Llamamos al metodo pasándole un vehiculo como parametro
-        
-        boolean resultado2 = mecanico.arreglarVehiculo2(coche, vehiculos);
-        
-        if(resultado2 == true) {
+        boolean resultado2 = mecanico.arreglarVehiculo2(coche1, vehiculos); // Llamamos al metodo pasándole un vehiculo como parametro y almacenamos el resultado en una variable
+          
+        if(resultado2 == true) { // si es verdadero, imprimimos mensaje por pantalla
             System.out.println("Vehiculo arreglado");
+            
+            Factura factura2 = new Factura(40000.2, fecha, cliente); // creamos el objeto de la clase factura
+            
+            factura2.calcularPrecio(114.5); // // llamada al método
+        
+            facturas.add(factura2); // añadimos la factura al arrayList de facturas
         }
         else{
             System.out.println("Piezas pedidas a Alemania"); 
         }
-        
-        Factura factura2 = new Factura(40000.2, fecha, cliente); // creamos el objeto de la clase factura
-        
-        facturas.add(factura2); // añadimos la factura al arrayList de facturas
         
         /*
         Recorrer el array de la clase Factura y mostrar por pantalla el valor de los atributos de cada factura (del atributo cliente con mostrar el nombre es suficiente)

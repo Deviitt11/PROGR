@@ -23,7 +23,6 @@ public class Vehiculo {
     }
 
     // Métodos get y set
-    
     public String getMatricula() {
         return matricula;
     }

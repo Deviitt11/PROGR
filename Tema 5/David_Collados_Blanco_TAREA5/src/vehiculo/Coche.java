@@ -41,7 +41,6 @@ public class Coche extends Vehiculo {
     // Método público mostrarDatos que muestre por pantalla el valor de todos sus atributos (incluidos los del padre)
     @Override
     public void mostrarDatos() {
-        System.out.println("Matricula: " + super.getMatricula() + ", su velocidad maxima es: " + super.getVelocidadMax() + " y su year de fabricacion es: " + super.getAnoFabricacion());
         super.mostrarDatos();
         
         System.out.println("Numero de puertas: " + this.getNumPuertas() + " y su motor es: " + this.getMotor());

@@ -80,14 +80,11 @@ public class Factura {
         
         precio = precioTotal; // actualizamos el precio
         
-        System.out.println("Precio acutalizado"); // mensaje para que el usuario sepa q se actualizó el precio
+        System.out.println("Precio actualizado"); // mensaje para que el usuario sepa q se actualizó el precio
     }
     
     // método que muestra los datos de la factura
     public void mostrarFactura(){
         System.out.println("Precio: " + this.getPrecio() + ", fecha: " + this.getFecha() + ", del cliente: " + cliente.getNombre());
     }
-    
-    
-    
 }
