@@ -1,43 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package vivienda;
 
 import java.util.Date;
 
 /**
  *
- * @author ALUMNOS_FP
+ * @author carmen
  */
 public class Vivienda {
-    
+
+//atributos
     double precio;
-    Date antiguedad = new Date();
+    Date antiguedad = null;
     String direccion;
     int superficie;
 
-    public Vivienda(double precio, Date antiguedad, String direccion, int superficie) {
-        this.precio = precio;
-        this.antiguedad = antiguedad;
-        this.direccion = direccion;
-        this.superficie = superficie;
-    }
-
-    public Vivienda(double precio, String direccion, int superficie) {
-        this.precio = precio;
-        this.direccion = direccion;
-        this.superficie = superficie;
-    }
-    
-    // Constructor de copia
-    public Vivienda(Vivienda v){
-        this.precio = v.getPrecio();
-        this.antiguedad = v.getAntiguedad();
-        this.direccion = v.getDireccion();
-        this.superficie = v.getSuperficie();
-    }
-
+//getter and setter
     public double getPrecio() {
         return precio;
     }
@@ -70,26 +47,45 @@ public class Vivienda {
         this.superficie = superficie;
     }
 
+//constructor
+    public Vivienda(double precio, Date antiguedad, String direccion, int superficie) {
+        this.precio = precio;
+        this.antiguedad = antiguedad;
+        this.direccion = direccion;
+        this.superficie = superficie;
+    }
+
+//constructor sin antiguedad
+    public Vivienda(double precio, String direccion, int superficie) {
+        this.precio = precio;
+        this.direccion = direccion;
+        this.superficie = superficie;
+    }
+
+//constructor de copia    
+    public Vivienda(Vivienda v) {
+        this.precio = v.getPrecio();
+        this.antiguedad = v.getAntiguedad();
+        this.direccion = v.getDireccion();
+        this.superficie = v.getSuperficie();
+    }
+
+//método mostrar vivienda
     @Override
     public String toString() {
-        return "Vivienda\n" + 
-                "precio=" + precio + 
-                ", \nantiguedad=" + antiguedad + 
-                ", \ndireccion=" + direccion + 
-                ", \nsuperficie=" + superficie;
+        return "Vivienda{\n"
+                + "precio=" + precio
+                + "\nantiguedad=" + antiguedad
+                + "\ndireccion=" + direccion
+                + "\nsuperficie=" + superficie + '}';
     }
-    
-    public void mostrarVivienda(){
-        System.out.println("Vivienda\n" + 
-                "precio=" + precio + 
-                ", \nantiguedad=" + antiguedad + 
-                ", \ndireccion=" + direccion + 
-                ", \nsuperficie=" + superficie);
+
+    public void mostrarVivienda() {
+        System.out.println("El precio es de : " + this.precio);
+        System.out.println("La vivienda tiene una antiguedad de>: " + this.antiguedad);
+        System.out.println("La vivienda esta ubicada en la calle: " + this.direccion);
+        System.out.println("La vivienda tiene una superficie de: " + this.superficie);
+
     }
-    
-    
-    
-    
-    
-    
+
 }

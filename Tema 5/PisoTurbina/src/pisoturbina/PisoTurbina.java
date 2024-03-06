@@ -25,6 +25,10 @@ public class PisoTurbina {
         // MAPA
         HashMap<Integer, Vivienda> mapaViviendas;
         
+        //Objetos piso con bucle
+        //Piso p = new Piso(5, 'A', 150000, "Calle corrida", 120);
+        
+        
         
         
     }
