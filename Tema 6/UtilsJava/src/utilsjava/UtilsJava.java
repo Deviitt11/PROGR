@@ -4,6 +4,8 @@
  */
 package utilsjava;
 
+import clasesfiguras.Cuadrado;
+import clasesfiguras.Rectangulo;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.logging.Level;
@@ -47,6 +49,20 @@ public class UtilsJava {
             Logger.getLogger(UtilsJava.class.getName()).log(Level.SEVERE, null, ex);
         }
         System.err.println("Siesta");
+        
+        Cuadrado c = new Cuadrado(3.6);
+        Rectangulo r = new Rectangulo(2,4);
+        
+        String claseCuad = c.getClass().getName();
+        //figura.Cuadrado
+        
+        String[] cadena = claseCuad.split("\\.");
+        
+        String nombre = cadena[1];
+        
+        
+        
+        
     }
     
     // aritExp

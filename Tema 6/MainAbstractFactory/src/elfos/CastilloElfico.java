@@ -2,23 +2,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package clasesfiguras;
+package elfos;
 
 /**
  *
  * @author ALUMNOS_FP
  */
-public class Rectangulo extends FiguraGeometrica{
+public class CastilloElfico implements interfaces.InterfazCastillo {
 
-    public Rectangulo(int valor, int par1) {
-        super(valor);
+    @Override
+    public void defender() {
+        System.out.println("Defensa elfica: AHHHHH");
     }
-
-    public Rectangulo() {
-    }
-
-    
-    
-    
-    
 }

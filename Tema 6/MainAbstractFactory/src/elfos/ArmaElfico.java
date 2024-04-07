@@ -2,23 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package clasesfiguras;
+package elfos;
 
 /**
  *
  * @author ALUMNOS_FP
  */
-public class Rectangulo extends FiguraGeometrica{
+public class ArmaElfico implements interfaces.interfazArmas{
 
-    public Rectangulo(int valor, int par1) {
-        super(valor);
+    @Override
+    public void lanzar() {
+        System.out.println("Lanzaaarrr");
     }
-
-    public Rectangulo() {
-    }
-
-    
-    
-    
     
 }
