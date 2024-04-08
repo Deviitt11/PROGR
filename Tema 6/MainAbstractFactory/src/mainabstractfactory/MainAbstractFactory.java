@@ -14,7 +14,15 @@ public class MainAbstractFactory {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        System.out.println(args.length);
+        
+        System.out.println(args[0]);
+        System.out.println(args[1]);
+        System.out.println(args[2]);
+        System.out.println(args[3]);
+        
+        
     }
     
 }
