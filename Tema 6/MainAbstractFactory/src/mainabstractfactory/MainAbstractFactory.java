@@ -4,6 +4,10 @@
  */
 package mainabstractfactory;
 
+import factory.FabricaElfica;
+import factory.FabricaEnana;
+import factory.FabricaHumana;
+
 /**
  *
  * @author ALUMNOS_FP
@@ -15,12 +19,26 @@ public class MainAbstractFactory {
      */
     public static void main(String[] args) {
         
-        System.out.println(args.length);
+        String elecEspecie = "";
+        if(args.length > 0) {
+            elecEspecie = args[0];
+        }
         
-        System.out.println(args[0]);
-        System.out.println(args[1]);
-        System.out.println(args[2]);
-        System.out.println(args[3]);
+        Kingdom reino;
+        
+        switch (elecEspecie) {
+            case "Humano":
+                reino = new Kingdom(new FabricaHumana());
+                break;
+            case "Enano":
+                reino = new Kingdom(new FabricaEnana());
+                break;
+            case "Elfo":
+                reino = new Kingdom(new FabricaElfica());
+                break;
+            default:
+                reino = new Kingdom(new FabricaElfica());
+        }
         
         
     }

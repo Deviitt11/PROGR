@@ -8,7 +8,7 @@ package humanos;
  *
  * @author ALUMNOS_FP
  */
-public class EjercitoElfico implements interfaces.InterfazEjercito{
+public class EjercitoHumano implements interfaces.InterfazEjercito{
 
     @Override
     public void atacar() {

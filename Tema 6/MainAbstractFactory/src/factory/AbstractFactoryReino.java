@@ -4,11 +4,19 @@
  */
 package factory;
 
+import interfaces.InterfazCastillo;
+import interfaces.InterfazEjercito;
+import interfaces.interfazArmas;
+
 /**
  *
  * @author ALUMNOS_FP
  */
 public interface AbstractFactoryReino {
+    
+    public abstract InterfazEjercito crearEjercito();
+    public abstract interfazArmas crearArmas();
+    public abstract InterfazCastillo crearCastillo();
     
     
     
