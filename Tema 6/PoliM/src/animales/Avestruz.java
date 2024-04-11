@@ -5,17 +5,16 @@
 package animales;
 
 import interf.puedeCaminar;
-import interf.puedeVolar;
 
 /**
  *
- * @author ALUMNOS_FP
+ * @author david
  */
-public class Loro extends Ave implements puedeCaminar, puedeVolar{
+public class Avestruz extends Ave implements puedeCaminar {
 
     @Override
     public void caminar() {
-        System.out.println("Caminando...");
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }

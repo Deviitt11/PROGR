@@ -11,7 +11,12 @@ import interf.puedeNadar;
  *
  * @author ALUMNOS_FP
  */
-public class Gato extends Mamifero implements puedeNadar, puedeCaminar{
+public class Gato extends Felino implements puedeNadar, puedeCaminar{
+
+    @Override
+    public void nadar() {
+        System.out.println("Nadando...");
+    }
 
   
 

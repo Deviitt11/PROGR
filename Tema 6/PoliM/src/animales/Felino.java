@@ -9,13 +9,13 @@ import interf.puedeVolar;
 
 /**
  *
- * @author ALUMNOS_FP
+ * @author david
  */
-public class Loro extends Ave implements puedeCaminar, puedeVolar{
+public class Felino extends Mamifero implements puedeCaminar, puedeVolar {
 
     @Override
-    public void caminar() {
-        System.out.println("Caminando...");
+    public void volar() {
+        System.out.println("Volando...");
     }
     
 }
