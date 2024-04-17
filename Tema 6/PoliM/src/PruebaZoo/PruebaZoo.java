@@ -24,6 +24,10 @@ public class PruebaZoo {
         Murcielago zubat = new Murcielago();
         Perro xanxez = new Perro();
         
+        if(gatucu instanceof Gato) {
+            System.out.println("SI");
+        }
+        
     }
     
 }

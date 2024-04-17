@@ -17,6 +17,7 @@ public class Gato extends Felino implements puedeNadar, puedeCaminar{
     public void nadar() {
         System.out.println("Nadando...");
     }
+    
 
   
 
