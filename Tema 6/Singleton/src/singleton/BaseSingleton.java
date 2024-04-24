@@ -21,13 +21,16 @@ public class BaseSingleton {
     public String getNombre() {
         return nombre;
     }
-   
-    
-    
+  
     public static BaseSingleton crearInstancia(String nombre){
         if(instancia == null) {
             instancia = new BaseSingleton(nombre);
         }
         return instancia;
+    }
+    
+    // Método de ejemplo
+    public void showMessage() {
+        System.out.println("¡Hola! Soy una instancia Singleton.");
     }
 }
