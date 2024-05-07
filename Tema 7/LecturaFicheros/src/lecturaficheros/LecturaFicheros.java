@@ -17,11 +17,16 @@ public class LecturaFicheros {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        final String RUTA = "C:\\Users\\ALUMNOS_FP\\Documents\\GitHub\\PROGR\\Ficheros\\Fichero.txt";
+        final String RUTA = "C:\\Users\\ALUMNOS_FP\\Documents\\NetBeansProjects\\Tema 7\\LecturaFicheros\\Fichero.txt";
         
-        Escritor.escribirFichero(RUTA);
+        //Escritor.escribirFichero(RUTA);
         
+        Escritor.escribirFichero("FicheroEscribir.txt");
+        Escritor.sobreescribirFichero("FicheroSobre.txt");
         
+        Lector lector = new Lector("FicheroEscribir.txt");
+        lector.leerFichero();
+          
     }
     
         
