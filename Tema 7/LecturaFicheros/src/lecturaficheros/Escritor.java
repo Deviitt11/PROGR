@@ -59,4 +59,25 @@ public class Escritor {
    
     }
     
+    public static void escribirLetraS(String cadena, String nombFich) {
+        
+        final String PATH = "C:\\Users\\ALUMNOS_FP\\Documents\\NetBeansProjects\\Tema 7\\LecturaFicheros\\Fichero2.txt";
+        
+        String pathFile = PATH + nombFich;
+        
+        try {
+            FileWriter escritor = new FileWriter(pathFile);
+            
+            for (int i = 0; i < cadena.length(); i++) {
+                escritor.write(cadena.charAt(i));
+            }
+            
+            escritor.close();
+        } catch (IOException ex) {
+            Logger.getLogger(Escritor.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
+    }
+    
 }

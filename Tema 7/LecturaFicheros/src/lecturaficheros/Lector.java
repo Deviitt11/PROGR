@@ -52,5 +52,34 @@ public class Lector {
         }
     }
     
+    public void leerFicheroDelimitado(String delimitador) {
+        
+        try (FileReader reader = new FileReader(pathFile)){
+            
+            String textFich = "";
+            
+            int car;
+            
+            while((car = reader.read()) != -1){
+                String letra = String.valueOf((char)car);
+                
+                if(letra.equals(delimitador)) {
+                    System.out.println();
+                }
+                else{
+                    System.out.println(letra);
+                }
+                
+            }
+            
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(Lector.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(Lector.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
+    }
+    
     
 }

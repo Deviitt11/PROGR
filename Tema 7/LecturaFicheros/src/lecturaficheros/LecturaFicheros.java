@@ -26,6 +26,12 @@ public class LecturaFicheros {
         
         Lector lector = new Lector("FicheroEscribir.txt");
         lector.leerFichero();
+        
+        Escritor.escribirLetraS("Hola muy buenas", "ficheroLetra.txt");
+        
+        Lector lector1 = new Lector("C:\\Users\\ALUMNOS_FP\\Documents\\NetBeansProjects\\Tema 7\\LecturaFicheros\\ficheroLetra.txt");
+        lector1.leerFichero();
+        lector1.leerFicheroDelimitado("a");
           
     }
     
