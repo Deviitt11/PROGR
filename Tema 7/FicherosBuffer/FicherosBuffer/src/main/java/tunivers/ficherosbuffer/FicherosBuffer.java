@@ -17,5 +17,6 @@ public class FicherosBuffer {
         System.out.println(palab);
         System.out.println(let);
         
+        Bibliotecario.leerDelimitado("fileDelimitado.txt", "-");
     }
 }
